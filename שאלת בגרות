@@ -1,0 +1,88 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApplication2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            int amountofsfarim = 0;
+            int amountofmovies = 0;
+            int parties = 0;
+            int didallthethree = 0; // amount
+            int didonlytwo = 0;
+            int didaboveten = 0;
+            int didabovefive = 0;
+
+            for(int i = 1; i <= 100; i++)
+            {
+                amountofsfarim = 0;
+                amountofmovies = 0;
+                parties = 0;
+
+                amountofsfarim = int.Parse(Console.ReadLine());
+                amountofmovies = int.Parse(Console.ReadLine());
+                parties = int.Parse(Console.ReadLine());
+
+                if(amountofsfarim > 0 && amountofmovies > 0 && parties > 0)
+                {
+                    didallthethree++;
+                }
+
+                if(amountofmovies > 0 && amountofsfarim > 0)
+                {
+                    didonlytwo++;
+                }
+
+                if(amountofmovies > 0 && parties > 0)
+                {
+                    didonlytwo++;
+                }
+
+                if(amountofsfarim > 0 && parties > 0)
+                {
+                    didonlytwo++;
+                }
+
+                if(amountofsfarim > 0 || amountofmovies > 0 || parties > 0)
+                {
+                    if(amountofsfarim > 5)
+                    {
+                        didabovefive++;
+                    }
+                    if(amountofmovies > 5)
+                    {
+                        didabovefive++;
+
+                    }
+                    if(parties > 5)
+                    {
+                        didabovefive++;
+                    }
+
+                   
+
+
+
+
+                    }
+
+                
+                if(amountofmovies > 10 && amountofsfarim > 10 && parties > 10)
+                {
+                    didaboveten++;
+                }
+
+
+
+
+            }
+            
+
+        }
+    }
+}
