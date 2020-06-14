@@ -1,0 +1,61 @@
+int sefer = 0;
+            int seret = 0;
+            int mesibot = 0;
+            int allthree = 0;
+            int onlytwo = 0;
+            int atleast5inone = 0;
+            int morethan10 = 0;
+
+            for (int i = 0; i <= 100; i++)
+            {
+                int counter = 0;
+                sefer = int.Parse(Console.ReadLine());
+                seret = int.Parse(Console.ReadLine());
+                mesibot = int.Parse(Console.ReadLine());
+
+                if (sefer > 0)
+                {
+                    counter++;
+                }
+
+                if (seret > 0)
+                {
+                    counter++;
+                }
+
+                if (mesibot > 0)
+                {
+                    counter++;
+                }
+
+
+                if (counter == 3)
+                {
+                    allthree++;
+                }
+
+                // bet
+
+                if (counter == 2)
+                {
+                    onlytwo++;
+                }
+
+                // gimel
+
+                if (sefer > 5 || seret > 5 || mesibot > 5)
+                {
+                    atleast5inone++;
+                }
+
+
+
+                // Dalet
+
+                if (counter > 10)
+                {
+                    morethan10++;
+                }
+
+
+            }
