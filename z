@@ -1,0 +1,34 @@
+int kids = 0;
+            int boys = 0;
+            int girls = 0;
+            int counter = 0;
+
+
+            
+            boys = int.Parse(Console.ReadLine());
+            girls = int.Parse(Console.ReadLine());
+            kids = boys + girls; 
+                         
+            while (kids != -1 && kids >= 0)
+            {
+                if( boys == girls)
+                {
+                    counter++;
+                }
+
+                Console.WriteLine(kids);
+
+                boys = int.Parse(Console.ReadLine());
+                girls = int.Parse(Console.ReadLine());
+
+
+
+            }
+
+            
+
+
+
+        }
+    }
+}
