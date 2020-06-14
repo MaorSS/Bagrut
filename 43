@@ -1,0 +1,9 @@
+int sum = 0,num=0;
+
+while(sum<=100)
+{
+num++;
+Console.Write(""+num);
+sum=sum+num;
+}
+console.WriteLine(sum);
