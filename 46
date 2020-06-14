@@ -1,0 +1,26 @@
+ int code = int.Parse(Console.ReadLine());
+            int tickets = int.Parse(Console.ReadLine());
+            int code1tickets = 0;
+            int code2tickets = 0;
+
+
+            while (code != 0)
+            {
+                if( code == 1)
+                {
+                    code1tickets++;
+                }
+
+                if(code == 2)
+                {
+                    code2tickets++;
+                }
+
+                code = int.Parse(Console.ReadLine());
+
+                
+            }
+            Console.WriteLine(code1tickets);
+            Console.WriteLine(code2tickets);
+
+
