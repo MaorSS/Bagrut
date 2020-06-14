@@ -1,19 +1,25 @@
- int code = int.Parse(Console.ReadLine());
-            int tickets = int.Parse(Console.ReadLine());
+
+            int code = int.Parse(Console.ReadLine());
+            int tickets = 0;       
             int code1tickets = 0;
             int code2tickets = 0;
+            int totaltickets = 0;
 
 
-            while (code != 0)
+            while (code != 0 && totaltickets < 100)
             {
                 if( code == 1)
                 {
-                    code1tickets++;
+                    tickets = int.Parse(Console.ReadLine());
+                    code1tickets = tickets + code1tickets;
+                    totaltickets = totaltickets + code1tickets;
                 }
 
                 if(code == 2)
                 {
-                    code2tickets++;
+                    tickets = int.Parse(Console.ReadLine());
+                    code2tickets = tickets + code2tickets;
+                    totaltickets = totaltickets + code2tickets;
                 }
 
                 code = int.Parse(Console.ReadLine());
